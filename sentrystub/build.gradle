@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdk 33
+    namespace 'io.sentry'
+
+    defaultConfig {
+        minSdk 26
+        targetSdk 33
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sonarqube {
+        skipProject = true
+    }
+}
